@@ -1,0 +1,8 @@
+package com.BasicDemos;
+
+public class D02Variables {
+	public static void main(String[]args)
+	{
+		
+	}
+}

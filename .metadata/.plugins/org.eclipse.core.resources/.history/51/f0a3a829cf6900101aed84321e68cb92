@@ -1,0 +1,15 @@
+package com.BasicDemos;
+
+import java.util.Scanner;
+
+public class D03AcceptData {
+	public static void main(String[] args) {
+		int no1;
+		double avg;
+		char grade;
+		String name;
+		Scanner scn = new Scanner(System.in);
+		
+		no1 = scn.nextInt();
+	}
+}

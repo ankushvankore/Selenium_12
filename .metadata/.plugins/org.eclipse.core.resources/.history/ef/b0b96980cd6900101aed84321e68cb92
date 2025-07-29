@@ -1,0 +1,11 @@
+package com.BasicDemos;
+
+public class D02Variables {
+	public static void main(String[]args)
+	{
+		int no1 = 88;
+		double avg = 6.8;
+		char grade = 'A';
+		String name = "Rahul";
+	}
+}
