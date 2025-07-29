@@ -1,0 +1,17 @@
+package com.ConditionalStatements;
+
+import java.util.Scanner;
+
+public class D02OddEven {
+
+	public static void main(String[] args) {
+		int no;
+		Scanner scn = new Scanner(System.in);
+		
+		System.out.println("Enter No: ");
+		no = scn.nextInt();
+		
+		
+	}
+
+}

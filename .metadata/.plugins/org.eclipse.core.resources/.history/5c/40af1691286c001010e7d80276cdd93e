@@ -1,0 +1,26 @@
+package com.ConditionalStatements;
+
+import java.util.Scanner;
+
+public class D02OddEven {
+
+	public static void main(String[] args) {
+		int no, r;
+		Scanner scn = new Scanner(System.in);
+		
+		System.out.println("Enter No: ");
+		no = scn.nextInt();
+		
+		r = no % 2;
+		
+		if(r == 0)
+		{
+			System.out.println("This is Even no");
+		}
+		else
+		{
+			System.out.println("This is Odd no");
+		}
+	}
+
+}
