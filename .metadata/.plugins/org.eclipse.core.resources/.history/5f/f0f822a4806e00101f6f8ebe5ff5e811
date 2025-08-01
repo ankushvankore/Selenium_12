@@ -1,0 +1,11 @@
+package com.ArrayDemo;
+
+public class D02ArrayInitilization {
+
+	public static void main(String[] args) {
+		int[] marks = new int[] {10, 20, 30, 40, 50, 60, 70};
+		
+		
+	}
+
+}

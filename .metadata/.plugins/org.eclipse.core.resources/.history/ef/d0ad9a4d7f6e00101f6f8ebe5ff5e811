@@ -1,0 +1,15 @@
+package com.ArrayDemo;
+
+public class D01ArrayDecl {
+
+	public static void main(String[] args) {
+		int[] marks = new int[5];
+		//Array Deceleration
+		marks[0] = 85;
+		marks[1] = 75;
+		marks[2] = 96;
+		marks[3] = 74;
+		marks[4] = 65;
+	}
+
+}

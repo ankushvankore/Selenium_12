@@ -1,0 +1,25 @@
+package com.ArrayDemo;
+
+public class D01ArrayDecl {
+
+	public static void main(String[] args) {
+		int[] marks = new int[6];
+		//Array Deceleration
+		marks[0] = 85;
+		marks[1] = 75;
+		marks[2] = 96;
+		marks[3] = 74;
+		marks[4] = 65;
+		marks[5] = 55;
+		
+		/*System.out.println(marks[0]);
+		System.out.println(marks[1]);
+		System.out.println(marks[2]);
+		System.out.println(marks[3]);
+		System.out.println(marks[4]);*/
+		
+		for(int i = 0; i < 5; i++)
+			System.out.println(marks[i]);
+	}
+
+}

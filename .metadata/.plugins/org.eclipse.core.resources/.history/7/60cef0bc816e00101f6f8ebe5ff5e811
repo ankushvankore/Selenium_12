@@ -1,0 +1,14 @@
+package com.ArrayDemo;
+
+public class D03SortingArray {
+
+	public static void main(String[] args) {
+		//int[] arr = new int[] {54, 24, 65, 87, 34, 66, 78, 23};
+		int[] arr = {54, 24, 65, 87, 34, 66, 78, 23};
+		
+		System.out.println("Before Sorting");
+		for(int i = 0; i < arr.length; i++)
+			System.out.print(arr[i] + " ");
+	}
+
+}
