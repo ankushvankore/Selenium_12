@@ -29,6 +29,8 @@ public class D02OddEven {
 		{
 			System.out.println("This is Odd no");
 		}
+		
+		scn.close();
 	}
 
 }

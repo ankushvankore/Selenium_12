@@ -1,0 +1,15 @@
+package com.FunctionDemos;
+
+public class D01SimpleFunction {
+
+	//public static <return type> funName(<arguments>){}
+	public static void sayHello()
+	{
+		System.out.println("Hello from function");
+	}
+	
+	public static void main(String[] args) {
+		sayHello();
+	}
+
+}

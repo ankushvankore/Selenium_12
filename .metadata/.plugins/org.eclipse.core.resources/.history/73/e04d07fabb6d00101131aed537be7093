@@ -1,0 +1,27 @@
+package com.FunctionDemos;
+
+import java.util.Scanner;
+
+public class D02PassingArguments {
+	
+	//Passing Arguments to function
+	public static void calculateAddition(int n1, int n2)
+	{
+		int sum = n1 + n2;
+		System.out.println("Sum: " + sum);
+	}
+
+	public static void main(String[] args) {
+		int no1, no2, sum;
+		Scanner scn = new Scanner(System.in);
+			
+		System.out.println("Enter No1: ");
+		no1 = scn.nextInt();
+		System.out.println("Enter No2: ");
+		no2 = scn.nextInt();
+		calculateAddition(no1, no2);
+
+		calculateAddition(88, 99);
+	}
+
+}
