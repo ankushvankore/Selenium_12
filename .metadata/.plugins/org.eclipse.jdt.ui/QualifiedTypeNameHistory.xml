@@ -3,4 +3,7 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.ClassDemos.Employee"/>
+    <fullyQualifiedTypeName name="com.FunctionDemos.D01SimpleFunction"/>
+    <fullyQualifiedTypeName name="com.InheritanceDemos.Manager"/>
 </qualifiedTypeNameHistroy>

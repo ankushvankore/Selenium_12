@@ -18,6 +18,9 @@ public class ClientClass {
 		
 		MyDate d4 = new MyDate(18, "October");
 		d4.displayDate();
+		
+		MyDate d5;				//Reference
+		//d5.displayDate();
 	}
 
 }
