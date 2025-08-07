@@ -6,4 +6,5 @@
     <fullyQualifiedTypeName name="com.ClassDemos.Employee"/>
     <fullyQualifiedTypeName name="com.FunctionDemos.D01SimpleFunction"/>
     <fullyQualifiedTypeName name="com.InheritanceDemos.Manager"/>
+    <fullyQualifiedTypeName name="com.InheritanceDemos.Employee"/>
 </qualifiedTypeNameHistroy>

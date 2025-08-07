@@ -10,14 +10,12 @@ public class Manager extends Employee
 		super();		//Calls plain constructor of base class
 		hours = 0;
 		rate = 0;
-		System.out.println("Manager --> Plain");
 	}
 
 	public Manager(int id, String nm, String gn, double bs, double hours, double rate) {
 		super(id, nm, gn, bs);	//Calls parameterized constructor of base class
 		this.hours = hours;
 		this.rate = rate;
-		System.out.println("Manager --> Parameterized");
 	}
 	
 	public void displayData()
@@ -28,6 +26,7 @@ public class Manager extends Employee
 	}
 	public double calculateInsentive()
 	{
+		System.out.println(basicSalary);
 		double ins = hours * rate;
 		return ins;
 	}

@@ -4,7 +4,7 @@ public class Employee {
 	private int empId;
 	private String empName;
 	private String gender;
-	private double basicSalary;
+	protected double basicSalary;
 	
 	public Employee()
 	{
@@ -12,7 +12,6 @@ public class Employee {
 		empName = "Rahul";
 		gender = "Male";
 		basicSalary = 50000;
-		System.out.println("Employee --> Plain");
 	}
 	public Employee(int empId, String empName, String gender, double basicSalary)
 	{
@@ -20,7 +19,6 @@ public class Employee {
 		this.empName = empName;
 		this.gender = gender;
 		this.basicSalary = basicSalary;
-		System.out.println("Employee --> Parameterized");
 	}
 	public void displayData()
 	{
