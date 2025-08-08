@@ -7,4 +7,9 @@
     <fullyQualifiedTypeName name="com.FunctionDemos.D01SimpleFunction"/>
     <fullyQualifiedTypeName name="com.InheritanceDemos.Manager"/>
     <fullyQualifiedTypeName name="com.InheritanceDemos.Employee"/>
+    <fullyQualifiedTypeName name="com.AbstractClassDemos.Triangle"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
 </qualifiedTypeNameHistroy>
