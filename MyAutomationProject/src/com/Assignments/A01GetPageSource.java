@@ -1,9 +1,9 @@
-package com.WebDriverDemos;
+package com.Assignments;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class D04ReadingURL {
+public class A01GetPageSource {
 
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
@@ -11,13 +11,8 @@ public class D04ReadingURL {
 		
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		
-		String url = driver.getCurrentUrl();
-		System.out.println("URL: " + url);
-		
-		if(url.contains("login"))
-			System.out.println("Test case pass");
-		else
-			System.out.println("Test case fail");
+		String source = driver.getPageSource();
+		System.out.println(source);
 		
 		driver.close();
 	}
