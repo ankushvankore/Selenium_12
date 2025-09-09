@@ -31,8 +31,9 @@ public class D26HandlingAlert {
 		Thread.sleep(1000);
 		alt.accept();		//Will click on Ok button
 		
-		WebElement but2 = driver.findElement(By.id("timerAlertButton"));
-		js.executeScript("arguments[0].click()", but2);
+		//WebElement but2 = driver.findElement(By.id("timerAlertButton"));
+		//js.executeScript("arguments[0].click()", but2);
+		js.executeScript("arguments[0].click()", driver.findElement(By.id("timerAlertButton")));
 		//Thread.sleep(5000);
 		//wait.until(ExpectedConditions.alertIsPresent());
 		//alt = driver.switchTo().alert();
