@@ -35,9 +35,7 @@ public class D29DatePicker {
 		while(!month.getText().contains("Mar"))
 			rArrow.click();
 		
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click()", driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/div[2]/div/div/div[1]/div[3]/div[3]/div[2]/div/ul/li[26]/div/div/span")));
-		//driver.findElement(By.xpath("//span[contains(text(), \"20\")]")).click();
+		driver.findElement(By.xpath("(//span[contains(text(), \"20\")])[2]")).click();
 	}
 
 }
