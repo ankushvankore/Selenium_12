@@ -32,10 +32,12 @@ public class D29DatePicker {
 		WebElement rArrow = driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/div[2]/div/div/div[1]/div[3]/div[3]/div[2]/div/div/i[2]"));
 		WebElement month = driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/div[2]/div/div/div[1]/div[3]/div[3]/div[2]/div/div/div/p[1]"));
 		
-		while(!month.getText().contains("Mar"))
+		String m = "Jan", day = "8";
+		
+		while(!month.getText().contains(m))
 			rArrow.click();
 		
-		driver.findElement(By.xpath("(//span[contains(text(), \"20\")])[2]")).click();
+		driver.findElement(By.xpath("//span[text()= \""+day+"\"]")).click();
 	}
 
 }
