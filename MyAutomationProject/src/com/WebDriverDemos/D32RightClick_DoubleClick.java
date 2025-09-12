@@ -31,7 +31,8 @@ public class D32RightClick_DoubleClick {
 		driver.findElement(By.id("authentication")).click();
 		
 		WebElement dblClick = driver.findElement(By.xpath("//*[@id=\"authentication\"]/button"));
-		act.moveToElement(dblClick).doubleClick().perform();
+		//act.moveToElement(dblClick).doubleClick().perform();
+		act.doubleClick(dblClick).perform();
 		
 		Alert alt = driver.switchTo().alert();
 		System.out.println(alt.getText());
