@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Modular Framework">
+	<test name = "Execute Single Test">
+		<classes>
+			<class name = "com.TestNGDemos.D05GoogleAssignment">
+				<methods>
+					<include name = "gmailTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
