@@ -1,241 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-15T08:32:05 IST" name="Modular Framework" finished-at="2025-09-15T08:33:09 IST" duration-ms="63451">
+  <suite started-at="2025-09-18T08:50:36 IST" name="Default suite" finished-at="2025-09-18T08:51:11 IST" duration-ms="34893">
     <groups>
     </groups>
-    <test started-at="2025-09-15T08:32:05 IST" name="Execute Single Test" finished-at="2025-09-15T08:33:09 IST" duration-ms="63451">
-      <class name="com.TestNGDemos.D07AssertionDemo">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.TestNGDemos.D07AssertionDemo@7586beff]" started-at="2025-09-15T08:32:09 IST" name="setup" finished-at="2025-09-15T08:32:15 IST" duration-ms="6361" status="PASS">
+    <test started-at="2025-09-18T08:50:36 IST" name="Default test" finished-at="2025-09-18T08:51:11 IST" duration-ms="34893">
+      <class name="com.TestNGDemos.D10POM_Client">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.TestNGDemos.D10POM_Client@408d971b]" started-at="2025-09-18T08:50:36 IST" name="beforeTest" finished-at="2025-09-18T08:50:39 IST" duration-ms="3199" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.TestNGDemos.D07AssertionDemo@7586beff]" started-at="2025-09-15T08:32:52 IST" name="login" data-provider="getLoginData" finished-at="2025-09-15T08:32:53 IST" duration-ms="1753" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="registration()[pri:0, instance:com.TestNGDemos.D10POM_Client@408d971b]" started-at="2025-09-18T08:50:39 IST" name="registration" finished-at="2025-09-18T08:51:11 IST" duration-ms="31537" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.TestNGDemos.D07AssertionDemo@7586beff]" started-at="2025-09-15T08:32:53 IST" name="logout" finished-at="2025-09-15T08:32:58 IST" duration-ms="4143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.TestNGDemos.D07AssertionDemo@7586beff]" started-at="2025-09-15T08:32:58 IST" name="login" data-provider="getLoginData" finished-at="2025-09-15T08:32:59 IST" duration-ms="1833" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sheetal]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sheetal123]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Invalid credentials expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Invalid credentials expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.TestNGDemos.D07AssertionDemo.login(D07AssertionDemo.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.TestNGDemos.D07AssertionDemo@7586beff]" started-at="2025-09-15T08:32:59 IST" name="logout" finished-at="2025-09-15T08:32:59 IST" duration-ms="20" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.TestNGDemos.D07AssertionDemo@7586beff]" started-at="2025-09-15T08:32:59 IST" name="login" data-provider="getLoginData" finished-at="2025-09-15T08:33:02 IST" duration-ms="2112" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.TestNGDemos.D07AssertionDemo@7586beff]" started-at="2025-09-15T08:33:02 IST" name="logout" finished-at="2025-09-15T08:33:04 IST" duration-ms="2359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.TestNGDemos.D07AssertionDemo@7586beff]" started-at="2025-09-15T08:33:04 IST" name="login" data-provider="getLoginData" finished-at="2025-09-15T08:33:06 IST" duration-ms="1774" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sharvari]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sharvari123]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Invalid credentials expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Invalid credentials expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.TestNGDemos.D07AssertionDemo.login(D07AssertionDemo.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.TestNGDemos.D07AssertionDemo@7586beff]" started-at="2025-09-15T08:33:06 IST" name="logout" finished-at="2025-09-15T08:33:06 IST" duration-ms="50" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.TestNGDemos.D07AssertionDemo@7586beff]" started-at="2025-09-15T08:33:08 IST" name="afterTest" finished-at="2025-09-15T08:33:09 IST" duration-ms="639" status="PASS">
+        </test-method> <!-- registration -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.TestNGDemos.D10POM_Client@408d971b]" started-at="2025-09-18T08:51:11 IST" name="afterTest" finished-at="2025-09-18T08:51:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.TestNGDemos.D07AssertionDemo -->
-      <class name="com.TestNGDemos.D05GoogleAssignment">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:32:06 IST" name="setup" finished-at="2025-09-15T08:32:09 IST" duration-ms="3015" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="launchGoogle()[pri:0, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:32:15 IST" name="launchGoogle" finished-at="2025-09-15T08:32:20 IST" duration-ms="4839" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchGoogle -->
-        <test-method signature="gmailTest()[pri:1, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:32:20 IST" name="gmailTest" finished-at="2025-09-15T08:32:27 IST" duration-ms="7646" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gmailTest -->
-        <test-method is-config="true" signature="printTitle()[pri:0, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:32:27 IST" name="printTitle" finished-at="2025-09-15T08:32:27 IST" duration-ms="48" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printTitle -->
-        <test-method is-config="true" signature="launchGoogle()[pri:0, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:32:27 IST" name="launchGoogle" finished-at="2025-09-15T08:32:30 IST" duration-ms="2329" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchGoogle -->
-        <test-method signature="imagesTest()[pri:2, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:32:30 IST" name="imagesTest" finished-at="2025-09-15T08:32:31 IST" duration-ms="1305" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- imagesTest -->
-        <test-method is-config="true" signature="printTitle()[pri:0, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:32:31 IST" name="printTitle" finished-at="2025-09-15T08:32:31 IST" duration-ms="38" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printTitle -->
-        <test-method is-config="true" signature="launchGoogle()[pri:0, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:32:31 IST" name="launchGoogle" finished-at="2025-09-15T08:32:33 IST" duration-ms="1755" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchGoogle -->
-        <test-method signature="advtTest()[pri:3, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:32:33 IST" name="advtTest" finished-at="2025-09-15T08:32:39 IST" duration-ms="6023" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- advtTest -->
-        <test-method is-config="true" signature="printTitle()[pri:0, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:32:39 IST" name="printTitle" finished-at="2025-09-15T08:32:39 IST" duration-ms="47" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printTitle -->
-        <test-method is-config="true" signature="launchGoogle()[pri:0, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:32:39 IST" name="launchGoogle" finished-at="2025-09-15T08:32:42 IST" duration-ms="2661" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchGoogle -->
-        <test-method signature="aboutTest()[pri:4, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:32:42 IST" name="aboutTest" finished-at="2025-09-15T08:32:50 IST" duration-ms="7916" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aboutTest -->
-        <test-method is-config="true" signature="printTitle()[pri:0, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:32:50 IST" name="printTitle" finished-at="2025-09-15T08:32:52 IST" duration-ms="2093" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printTitle -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.TestNGDemos.D05GoogleAssignment@2d1ef81a]" started-at="2025-09-15T08:33:06 IST" name="afterTest" finished-at="2025-09-15T08:33:08 IST" duration-ms="2539" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.TestNGDemos.D05GoogleAssignment -->
-    </test> <!-- Execute Single Test -->
-  </suite> <!-- Modular Framework -->
+      </class> <!-- com.TestNGDemos.D10POM_Client -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Modular Framework">
+	<test name = "Execute Group">
+		<groups>
+			<run>
+				<!-- <include name = "TopLinks"></include> -->
+				<exclude name = "TopLinks"></exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name = "com.TestNGDemos.D05GoogleAssignment"></class>
+		</classes>
+	</test>
+</suite>

@@ -14,42 +14,46 @@ import org.testng.annotations.AfterTest;
 
 public class D05GoogleAssignment {
 	WebDriver driver;
-	@Test(priority = 1)
+
+	@Test(priority = 1, groups = "TopLinks")
 	public void gmailTest() {
 		driver.findElement(By.linkText("Gmail")).click();
 	}
-	@Test(priority = 2)
+
+	@Test(priority = 2, groups = "TopLinks")
 	public void imagesTest() {
 		driver.findElement(By.linkText("Images")).click();
 	}
-	@Test(priority = 3)
+
+	@Test(priority = 3, groups = "BottomLinks")
 	public void advtTest() {
 		driver.findElement(By.partialLinkText("Adve")).click();
 	}
-	@Test(priority = 4)
+
+	@Test(priority = 4, groups = "BottomLinks")
 	public void aboutTest() {
 		driver.findElement(By.linkText("About")).click();
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void launchGoogle() {
 		driver.get("https://www.google.com");
 		System.out.println("Title: " + driver.getTitle());
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void printTitle() {
 		System.out.println("Title: " + driver.getTitle());
 	}
 
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	public void setup() {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
-	@AfterTest
+	@AfterTest(alwaysRun = true)
 	public void afterTest() {
 		driver.quit();
 	}

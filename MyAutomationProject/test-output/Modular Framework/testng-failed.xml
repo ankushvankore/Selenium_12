@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Modular Framework]">
-  <test thread-count="5" name="Execute Single Test(failed)">
+  <test thread-count="5" name="Execute Group(failed)">
+    <groups>
+      <run>
+        <include name="TopLinks"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.TestNGDemos.D07AssertionDemo">
+      <class name="com.TestNGDemos.D05GoogleAssignment">
         <methods>
-          <include name="logout"/>
-          <include name="afterTest"/>
-          <include name="login" invocation-numbers="1 3"/>
-          <include name="setup"/>
+          <include name="gmailTest"/>
+          <include name="imagesTest"/>
         </methods>
-      </class> <!-- com.TestNGDemos.D07AssertionDemo -->
+      </class> <!-- com.TestNGDemos.D05GoogleAssignment -->
     </classes>
-  </test> <!-- Execute Single Test(failed) -->
+  </test> <!-- Execute Group(failed) -->
 </suite> <!-- Failed suite [Modular Framework] -->
