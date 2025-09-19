@@ -1,6 +1,9 @@
 package com.TestNGDemos;
 
 import org.testng.annotations.Test;
+
+import graphql.Assert;
+
 import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
@@ -14,12 +17,17 @@ public class D10POM_Client{
 	RediffUtility r1;
 	
 	@Test
-	public void registration() {
+	public void registration() throws InterruptedException {
 		r1.enterFullName("Sharvari Suryavanshi");
-		r1.enterRediffId("sharvari");
+		r1.enterRediffId("sharvari08Jan2000");
 		r1.enterPassword("Sharvari@123");
 		r1.setBirthDate("08", "JAN", "2002");
 		r1.selectGender("Female");
+		
+		//String msg = r1.checkAvailablity();
+		
+		//Assert.assertTrue(msg.contains("avail"));
+		Assert.assertTrue(r1.checkAvailablity().contains("avail"));
 	}
 
 	@BeforeTest
