@@ -10,7 +10,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.Duration;
 
+import org.apache.poi.hssf.util.HSSFColor.HSSFColorPredefined;
 import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFCellStyle;
+import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -32,6 +35,9 @@ public class D15LoginToOHRM_DDF {
 	WebDriver driver;
 	int index = 1;
 	
+	XSSFCellStyle style;
+	XSSFFont font;
+	
 	@Test(dataProvider = "getLoginDetails")
 	public void loginToOHRM(String un, String ps) {
 		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys(un);
@@ -40,22 +46,38 @@ public class D15LoginToOHRM_DDF {
 	}
 	@AfterMethod
 	public void logout() throws InterruptedException {
+		Thread.sleep(2000);
 		row = sheet.getRow(index);
 		cell = row.getCell(2);
 		String msg;
+		
+		style = wb.createCellStyle();
+		font = wb.createFont();
 		
 		if (driver.getCurrentUrl().contains("dashboard")) {
 			msg = driver.findElement(By.xpath("//p[@class='oxd-userdropdown-name']")).getText();
 			driver.findElement(By.xpath("//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']")).click();
 			driver.findElement(By.linkText("Logout")).click();
 			System.out.println("Test case pass");
+			
+			font.setBold(true);
+			font.setColor(HSSFColorPredefined.GREEN.getIndex());
+			style.setFont(font);
+			cell.setCellStyle(style);
+			
 			cell.setCellValue("Pass");
 		}
 		else
 		{
-			Thread.sleep(1000);
 			msg = driver.findElement(By.xpath("//p[@class='oxd-text oxd-text--p oxd-alert-content-text']")).getText();
 			System.out.println("Login fail");
+			
+			font.setItalic(true);
+			font.setStrikeout(true);
+			font.setColor(HSSFColorPredefined.RED.getIndex());
+			style.setFont(font);
+			cell.setCellStyle(style);
+			
 			cell.setCellValue("Fail");
 			
 		}

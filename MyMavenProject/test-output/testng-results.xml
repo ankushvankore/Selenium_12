@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-27T08:45:53 IST" name="Default suite" finished-at="2025-09-27T08:45:54 IST" duration-ms="1552">
+    <groups>
+    </groups>
+    <test started-at="2025-09-27T08:45:53 IST" name="Default test" finished-at="2025-09-27T08:45:54 IST" duration-ms="1552">
+      <class name="com.WebTests.D04DataProviderDemo">
+        <test-method signature="showDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.WebTests.D04DataProviderDemo@34a3d150]" started-at="2025-09-27T08:45:54 IST" name="showDetails" data-provider="getData" finished-at="2025-09-27T08:45:54 IST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User Name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Result]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Message]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showDetails -->
+        <test-method signature="showDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.WebTests.D04DataProviderDemo@34a3d150]" started-at="2025-09-27T08:45:54 IST" name="showDetails" data-provider="getData" finished-at="2025-09-27T08:45:54 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Not Run]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NULL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showDetails -->
+        <test-method signature="showDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.WebTests.D04DataProviderDemo@34a3d150]" started-at="2025-09-27T08:45:54 IST" name="showDetails" data-provider="getData" finished-at="2025-09-27T08:45:54 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sheetal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sheetal123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Not Run]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NULL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showDetails -->
+        <test-method signature="showDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.WebTests.D04DataProviderDemo@34a3d150]" started-at="2025-09-27T08:45:54 IST" name="showDetails" data-provider="getData" finished-at="2025-09-27T08:45:54 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Not Run]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NULL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showDetails -->
+        <test-method signature="showDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.WebTests.D04DataProviderDemo@34a3d150]" started-at="2025-09-27T08:45:54 IST" name="showDetails" data-provider="getData" finished-at="2025-09-27T08:45:54 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sharvari]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sharvari123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Not Run]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NULL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showDetails -->
+        <test-method signature="showDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.WebTests.D04DataProviderDemo@34a3d150]" started-at="2025-09-27T08:45:54 IST" name="showDetails" data-provider="getData" finished-at="2025-09-27T08:45:54 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[megha]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[megha123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Not Run]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NULL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showDetails -->
+        <test-method signature="showDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.WebTests.D04DataProviderDemo@34a3d150]" started-at="2025-09-27T08:45:54 IST" name="showDetails" data-provider="getData" finished-at="2025-09-27T08:45:54 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shri]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shri123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Not Run]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NULL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showDetails -->
+      </class> <!-- com.WebTests.D04DataProviderDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
